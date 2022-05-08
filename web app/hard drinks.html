@@ -1,0 +1,189 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+h1 {text-align:center;}
+  h1 {color: #033d5f;}
+  h1{background-color: #ccc;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+.column {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.column button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.column button:hover {
+  opacity: 0.7;}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+  <h1>Here is Hard Drinks for you</h1>
+ 
+
+
+<div class="row">
+  <div class="column">
+    <img src="old cuban.jpg"height="30%" alt="Nature" style="width:100%" onclick="myFunction(this);">
+    <h1>Old Cuban</h1>
+  <p class="price">450 ruppes</p>
+  <p><button>Add to order</button></p>
+  </div>
+  <div class="column">
+    <img src="old-fashioned.jpg"height="30%" alt="Snow" style="width:100%" onclick="myFunction(this);">
+    <h1>Old Fashioned</h1>
+  <p class="price">780 ruppes</p>
+  <p><button>Add to order</button></p>
+  </div>
+  <div class="column">
+    <img src="hd1.jpg"height="30%" alt="Mountains" style="width:90%" onclick="myFunction(this);">
+    <h1> Old Pari</h1>
+  <p class="price">750 ruppes</p>
+  <p><button>Add to order</button></p>
+  </div>
+  <div class="column">
+    <img src="whiskey sour.jpg"height="30%" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <h1>    Whiskey Sour</h1>
+  <p class="price">890 ruppes</p>
+  <p><button>Add to order</button></p><br>
+  </div>
+  <div class="column">
+    <img src="sasion highbal.jpg"height="30%" alt="Lights" style="width:100%" onclick="myFunction(this);">
+    <h1> Sasion Highball</h1>
+  <p class="price">650 ruppes</p>
+  <p><button>Add to order</button></p>
+  </div>
+</div>
+<div class="row">
+<div class="column">
+  <img src="negroni.jpg"height="33%" alt="Lights" style="width:100%" onclick="myFunction(this);">
+  <h1> Negroni</h1>
+ <p class="price">750 ruppes</p>
+ <p><button>Add to order</button></p>
+ </div>
+ <div class="column">
+  <img src="muscovado variant.jpg"height="33%"alt="Lights" style="width:100%" onclick="myFunction(this);">
+  <h1>Muscovado</h1>
+ <p class="price">490 ruppes</p>
+ <p><button>Add to order</button></p>
+ </div>
+ <div class="column">
+  <img src="spritz.jpg"height="33%"alt="Lights" style="width:100%" onclick="myFunction(this);">
+  <h1>Spritz</h1>
+  <p class="price">670 ruppes</p>
+ <p><button>Add to order</button></p>
+ </div>
+ <div class="column">
+  <img src="g.jpg"height="33%"alt="Lights" style="width:100%" onclick="myFunction(this);">
+  <h1>Glenfeddich</h1>
+ <p class="price">870 ruppes</p>
+ <p><button>Add to order</button></p>
+ </div>
+ <div class="column">
+  <img src="campari.jpg"height="33%"alt="Lights" style="width:100%" onclick="myFunction(this);">
+  <h1>Campari</h1>
+ <p class="price">550 ruppes</p>
+ <p><button>Add to order</button></p>
+ </div>
+</div>  
+
+<div class"row">
+<div class="column">
+<img src="daiquri.jpg"height="33%"alt="Lights" style="width:100%" onclick="myFunction(this);">
+<h1>Daiquri </h1>
+<p class="price">750 ruppes</p>
+<p><button>Add to order</button></p>
+</div>
+</div>
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+
+
+
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

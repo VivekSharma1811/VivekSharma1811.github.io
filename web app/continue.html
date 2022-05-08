@@ -1,0 +1,82 @@
+<html>
+<head>
+    <style>
+        h1 {text-align:center;}
+  h1 {color: #19242b;}
+  h1{background-color: #ccc;}
+  body{
+    
+    background: url("backg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+     
+body {font-family: Blippo, fantasy ;}
+* {box-sizing: border-box;
+  
+  opacity: 0.9;}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(211, 120, 120);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #3cebb0;
+  color: rgb(90, 53, 53);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cf7d2f;
+}
+
+.container {
+  border-radius: 15px;
+  width:70%;
+  height:200%;
+  background-color: #a0dada;
+  color: #390e0e;
+  padding: 40px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+</style>
+</head>
+<h1>Billing </h1>
+
+<div class="container">
+  
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="your  name..">
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="Phone Number">Phone number</label>
+    <input type="text" id="phone" name="payment" placeholder="Your Number..">
+    <label for="Payment">Payment</label>
+    <input type="text" id="phone" name="Payment" placeholder="payment type ..">
+    <label for="order"> your order details</label>
+    <input type="text" id="phone" name="yourorder" placeholder="your order ..">
+    <label for="Address"><Address></Address></label>
+    <textarea id="subject" name="subject" placeholder="billing address" style="height:200px"></textarea>
+    <input type="submit" name="save" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

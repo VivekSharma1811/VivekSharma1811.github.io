@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  h1 {text-align:center;}
+  h1 {color: #012d46;}
+  h1{background-color: #ccc;}
+  body{
+    
+    background: url("food1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+     
+body {font-family: Blippo, fantasy ;}
+* {box-sizing: border-box;
+  
+  opacity: 0.9;}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #3cebb0;
+  color: rgb(95, 17, 17);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cf7d2f;
+}
+
+.container {
+  border-radius: 15px;
+  width:70%;
+  height:200%;
+  background-color: #414242;
+  color: #ffffff;
+  padding: 40px;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+</style>
+
+</head>
+<body>
+
+<h1>CONTACT US</h1>
+
+<div class="container">
+  <form action="databasecontacttus.php" method="post">
+    <label for="fname"> Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="your  name..">
+
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+    <label for="Phone Number">Phone number</label>
+    <input type="text" id="phone" name="Phone Number" placeholder="Your Number..">
+
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" name="save" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+ 
