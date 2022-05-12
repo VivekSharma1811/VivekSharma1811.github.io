@@ -3,14 +3,28 @@
 <body>
 
 	<style>
-body	{ background-color:orange;
-          color: black;
+body	{ background-color:rgb(128, 0, 64);
+          color: rgb(0, 255, 128);
 }  
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
 table,tr,td{ font-family: Courier New ;
        font-weight: bold;
 }
 #result{ font-weight: bold;
-         color: #0000FF;}
+         color: rgb(255, 128, 192);}
        
 h1{ color:black;
     font-family: Courier New;
@@ -32,10 +46,10 @@ h1{ color:black;
 			<td>Movie Name</td>
 			<td><input type="text" list="movies" name="moviename" autocomplete="on" placeholder="Movie Name" required>
 			<datalist id="movies">
-  			<option value="Irada">
-		  	<option value="Rangoon">
-  			<option value="Logan">
-  			<option value="Fist Fight">
+  			<option value="KGF2">
+		  	<option value="RRR">
+  			<option value="BAHUBALI">
+  			<option value="AVTAR">
 			</datalist>
 			</td>
 		</tr>
